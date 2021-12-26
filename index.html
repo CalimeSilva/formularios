@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Formulario Para o Ericson</title>
   </head>
   <body>
     <div>
-      <h1>Cadastro</h1>
+      <h1 id="titulo">Cadastro</h1>
       <p>
         Para maior credibilidade por favor complete as suas informações pois
         elas servirão como base para o trabalho de final de curso!
@@ -16,20 +17,97 @@
       <br />
     </div>
     <form>
-      <fieldset>
+      <fieldset class="grupo">
         <div>
-          <label>Nome</label>
+          <label for="nome" required>Nome</label>
           <input type="text" name="nome" id="nome" />
         </div>
         <div>
-          <label>Sobrenome</label>
+          <label for="sobrenome" required>Sobrenome</label>
           <input type="text" name="sobrenome" id="sobrenome" />
         </div>
         <div>
-          <label>Email</label>
+          <label for="email" required>Email</label>
           <input type="email" name="email" id="email" />
         </div>
       </fieldset>
+
+      <div>
+        <label>Aonde é sua residençia?</label>
+        <label>
+          <input type="radio" name="provincia" value="luanda" />Luanda
+        </label>
+        <label>
+          <input type="radio" name="provincia" value="benguela" />Benguela
+        </label>
+        <label>
+          <input type="radio" name="provincia" value="kwanza-sul" />Kwanza-sul
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="provincia"
+            value="kwanza-norte"
+          />Kwanza-norte
+        </label>
+        <label> <input type="radio" name="provincia" value="bie" />Bié </label>
+      </div>
+
+      <div>
+        <label>Acha necessario pagar imposto?</label>
+        <label> <input type="radio" name="imposto" value="sim" />Sim </label>
+        <label> <input type="radio" name="imposto" value="nao" />Não </label>
+      </div>
+
+      <div>
+        <label>As politicas economicas do país fazem sentir?</label>
+        <label> <input type="radio" name="imposto" value="sim" />Sim </label>
+        <label> <input type="radio" name="imposto" value="nao" />Não </label>
+      </div>
+
+      <div>
+        <label>Devemos pagar imposto(IVA)?</label>
+        <label> <input type="radio" name="imposto" value="sim" />Sim </label>
+        <label> <input type="radio" name="imposto" value="nao" />Não </label>
+      </div>
+
+      <div>
+        <label
+          >O melhor ano que sentiu país a passou pelo melhor momento
+          economico?</label
+        >
+
+        <select id="ano-economico">
+          <option selected disabled value="">Selecione</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2019</option>
+          <option>2021</option>
+        </select>
+
+        <fieldset class="grupo">
+          <div>Selecione as politicas economincas mais</div>
+          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <labe for="eco1">divisas</labe>
+          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <labe for="eco1">divisas</labe>
+          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <labe for="eco1">divisas</labe>
+          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <labe for="eco1">divisas</labe>
+          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <labe for="eco1">divisas</labe>
+        </fieldset>
+      </div>
+
+      <div>
+        <br />
+        <label>Conte um pouco sobre a tua visão economica de Angola!</label>
+        <br />
+        <textarea rows="9" id="vs-economica" name="vs-economica"></textarea>
+      </div>
+      <button class="botão" type="submit">Enviar!</button>
     </form>
   </body>
 </html>
