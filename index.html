@@ -8,7 +8,7 @@
     <title>Formulario Para o Ericson</title>
   </head>
   <body>
-    <div>
+    <div id="cabecario">
       <h1 id="titulo">Cadastro</h1>
       <p class="sub-titulo">
         Para maior credibilidade por favor complete as suas informações pois
@@ -30,28 +30,34 @@
           <label for="email" required>Email</label>
           <input type="email" name="email" id="email" />
         </div>
+        <div class="campo">
+          <label>Qual a sua residençia</label>
+          <select id="provincia">
+            <option selected disabled value="">
+              Selecione a sua Provincia aonde reside
+            </option>
+            <option>Bengo</option>
+            <option>Benguela</option>
+            <option>Bíe</option>
+            <option>Cabinda</option>
+            <option>Cuando-Cubango</option>
+            <option>Cuanza Norte</option>
+            <option>Cuanza Sul</option>
+            <option>Cunene</option>
+            <option>Huambo</option>
+            <option>Huíla</option>
+            <option>Luanda</option>
+            <option>Luanda Sul</option>
+            <option>Malange</option>
+            <option>Moxico</option>
+            <option>Namibe</option>
+            <option>Moxico</option>
+            <option>Namibe</option>
+            <option>Uíge</option>
+            <option>Zaire</option>
+          </select>
+        </div>
       </fieldset>
-
-      <div class="campo">
-        <label>Aonde é sua residençia?</label>
-        <label>
-          <input type="radio" name="provincia" value="luanda" />Luanda
-        </label>
-        <label>
-          <input type="radio" name="provincia" value="benguela" />Benguela
-        </label>
-        <label>
-          <input type="radio" name="provincia" value="kwanza-sul" />Kwanza-sul
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="provincia"
-            value="kwanza-norte"
-          />Kwanza-norte
-        </label>
-        <label> <input type="radio" name="provincia" value="bie" />Bié </label>
-      </div>
 
       <div class="campo">
         <label>Acha necessario pagar imposto?</label>
@@ -90,16 +96,24 @@
       <fieldset class="grupo">
         <div id="check">
           Selecione as politicas economincas:
-          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <br />
           <labe for="eco1">divisas</labe>
           <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <br />
           <labe for="eco1">divisas</labe>
           <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <br />
           <labe for="eco1">divisas</labe>
           <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <br />
           <labe for="eco1">divisas</labe>
           <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <br />
           <labe for="eco1">divisas</labe>
+          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
+          <br />
+          <labe for="eco1">divisas</labe>
+          <input type="checkbox" id="eco1" name="eco1" value="divisas" />
         </div>
       </fieldset>
 
